@@ -24,7 +24,7 @@ To enable GPU support:
 https://www.kaggle.com/datasets/grouplens/movielens-20m-dataset?select=rating.csv
 
 ## Run the model 
-python train.py
+python movie_recommender.py
 
 ## Hyperparameters
 - change based on needs
@@ -32,4 +32,4 @@ python train.py
 num_epochs = 3         
 batch_size = 256       
 embed_size = 20        
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")  # Use GPU if available
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")  
